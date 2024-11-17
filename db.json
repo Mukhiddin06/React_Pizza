@@ -1,0 +1,112 @@
+{
+    "category": [
+        {
+            "id": 1,
+            "name": "Все",
+            "isActive": true
+        },
+        {
+            "id": 2,
+            "name": "Мясные",
+            "isActive": false
+        },
+        {
+            "id": 3,
+            "name": "Вегетарианская",
+            "isActive": false
+        },
+        {
+            "id": 4,
+            "name": "Гриль",
+            "isActive": false
+        },
+        {
+            "id": 5,
+            "name": "Острые",
+            "isActive": false
+        }
+    ],
+    "products":[
+        {
+            "id":1,
+            "title":"Чизбургер-пицца",
+            "img":"https://i.pinimg.com/474x/e4/8d/c2/e48dc22eb7f3df41d6611272f4f5d6c1.jpg",
+            "price":395,
+            "typeId":1,
+            "sizeId":1,
+            "categoryId":1,
+            "savedCount":1
+        },
+        {
+            "id":2,
+            "title":"Сырная",
+            "img":"https://i.pinimg.com/474x/e4/8d/c2/e48dc22eb7f3df41d6611272f4f5d6c1.jpg",
+            "price":450,
+            "typeId":1,
+            "sizeId":1,
+            "categoryId":2,
+            "savedCount":0
+        },
+        {
+            "id":3,
+            "title":"Креветки по-азиатски",
+            "img":"https://i.pinimg.com/474x/e4/8d/c2/e48dc22eb7f3df41d6611272f4f5d6c1.jpg",
+            "price":290,
+            "typeId":1,
+            "sizeId":1,
+            "categoryId":3,
+            "savedCount":0
+        },
+        {
+            "id":4,
+            "title":"Сырный цыпленок",
+            "img":"https://i.pinimg.com/474x/e4/8d/c2/e48dc22eb7f3df41d6611272f4f5d6c1.jpg",
+            "price":385,
+            "typeId":1,
+            "sizeId":1,
+            "categoryId":4,
+            "savedCount":0
+        },
+        {
+            "id":5,
+            "title":"Чизбургер-пицца",
+            "img":"https://i.pinimg.com/474x/e4/8d/c2/e48dc22eb7f3df41d6611272f4f5d6c1.jpg",
+            "price":395,
+            "typeId":1,
+            "sizeId":1,
+            "categoryId":5,
+            "savedCount":0
+        },
+        {
+            "id":6,
+            "title":"Сырная",
+            "img":"https://i.pinimg.com/474x/e4/8d/c2/e48dc22eb7f3df41d6611272f4f5d6c1.jpg",
+            "price":450,
+            "typeId":1,
+            "sizeId":1,
+            "categoryId":6,
+            "savedCount":0
+        },
+        {
+            "id":7,
+            "title":"Креветки по-азиатски",
+            "img":"https://i.pinimg.com/474x/e4/8d/c2/e48dc22eb7f3df41d6611272f4f5d6c1.jpg",
+            "price":290,
+            "typeId":1,
+            "sizeId":1,
+            "categoryId":2,
+            "savedCount":0
+        },
+        {
+            "id":8,
+            "title":"Сырный цыпленок",
+            "img":"https://i.pinimg.com/474x/e4/8d/c2/e48dc22eb7f3df41d6611272f4f5d6c1.jpg",
+            "price":385,
+            "typeId":1,
+            "sizeId":1,
+            "categoryId":5,
+            "savedCount":0
+        }
+    ]
+        
+}
