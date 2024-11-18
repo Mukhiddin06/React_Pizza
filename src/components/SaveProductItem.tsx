@@ -20,11 +20,11 @@ const SaveProductItem: React.FC<{ item: ProductType }> = ({ item }) => {
                 </div>
             </div>
             <div className="flex items-center space-x-[12px]">
-                <button onClick={() => dispatch(decrementItem(item))}><IncrIcon/></button>
+                <button onClick={() => dispatch(decrementItem({...item, price: item.price / item.savedCount}))}><IncrIcon/></button>
                 <p className="text-[22px] leading-[26.8px] font-bold">{item.savedCount}</p>
-                <button onClick={() => dispatch(incrementItem(item))}><DecIcon/></button>
+                <button onClick={() => dispatch(incrementItem({...item, price: item.price / item.savedCount}))}><DecIcon/></button>
             </div>
-            <p className="font-bold text-[22px] leading-[26.8px]">{item.price} ₽</p>
+            <p className="font-bold text-[22px] leading-[26.8px] w-[200px] text-center">{item.price} ₽</p>
             <button onClick={() => dispatch(removeItem(item.id))}><ClearIcons/></button>
         </div>
     )

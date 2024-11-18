@@ -29,13 +29,15 @@ const SavedSlice = createSlice({
         incrementItem: (state, action) => {
             const saveItem = state.saved.find(item => item.id === action.payload.id);
             if (saveItem) {
-                saveItem.savedCount += action.payload.incrementValue || 1;
+                saveItem.savedCount += 1;
+                saveItem.price = saveItem.price + action.payload.price;
             }
         },
         decrementItem: (state, action) => {
             const saveItem = state.saved.find(item => item.id === action.payload.id);
             if (saveItem) {
-                saveItem.savedCount -= action.payload.incrementValue || 1;
+                saveItem.savedCount -= 1;
+                saveItem.price = saveItem.price - action.payload.price;
                 if (saveItem.savedCount <= 0) {
                     state.saved = state.saved.filter(item => item.id !== action.payload.id);
                 }
