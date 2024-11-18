@@ -10,6 +10,7 @@ const Header = () => {
     const navigate = useNavigate()
     const saved = useSelector((state: RootState) => state.saved)
     const totalPirce = saved.reduce((a: number, item: ProductType) => a + item.price, 0)
+    const totalSaved = saved.reduce((a: number, item: ProductType) => a + item.savedCount, 0)
     return (
         <header className="pt-[43px] pl-[45px] pr-[55px] bg-[#FFDF8C]">
             <div className="bg-white rounded-t-[10px] flex items-center justify-between pl-[77px] pr-[38px] pt-[50px] pb-[40px] border-b-[1px] border-b-[#F6F6F6]">
@@ -26,7 +27,7 @@ const Header = () => {
                     <strong className="text-[#FFFFFF] py-[3px] pr-[13px] border-r-[2px] border-[#FFFFFF]">{totalPirce} ₽</strong>
                     <div className="flex items-center space-x-[8px] p-2">
                         <SaveIcon />
-                        <span className="font-bold text-[16px] leading-[19.49px] text-[#FFFFFF]">{saved.length}</span>
+                        <span className="font-bold text-[16px] leading-[19.49px] text-[#FFFFFF]">{totalSaved}</span>
                     </div>
                 </button> : null}
             </div>
